@@ -1,8 +1,6 @@
 \documentclass[letter,10pt]{scrartcl}
 \raggedright
 \usepackage[paperwidth=8.5in,paperheight=11.0in,margin=0.85in]{geometry}
-%\usepackage[urw-garamond]{mathdesign}
-%\usepackage[scaled]{helvet}
 \usepackage[default]{sourcesanspro}
 \usepackage[T1]{fontenc}
 \usepackage{enumitem}
@@ -10,15 +8,6 @@
 \begin{document}
 \pagestyle{empty}
 \raggedright
-%\setlength{\parindent}{2em}
-%\begin{tabularx}{\textwidth}{lXr}
-  %\multirow{4}{*}{\Huge \textsf{\textbf{Alexander C. Rucker}}} 
-  %%&&\texttt{acrucker@stanford.edu} \\ 
-  %&&\textsc{acrucker@stanford.edu} \\ 
-  %&& (732) 470-5808 \\ 
-  %&& 5 Comstock Cir., 401A \\ 
-  %&& Stanford, CA 94305-7710
-%\end{tabularx}
 \parbox{4in}{
   \vfill
   \Huge \textsf{\textbf{Matthew Vilim}}\\
@@ -48,17 +37,14 @@ Redwood City, CA 94063 \\
   \parbox{4.25in}{#3}\hfill\\[0.2em]%
 }
 
-%\newcommand{\listit}{\rule[0.65ex]{0.5em}{0.25ex}\hskip 0.5em}
 \newcommand{\listit}{\raisebox{0.1ex}{--}\hskip 0.5em}
 \newcommand{\header}[1]{%
   \vskip 1.0em %
   {\Large %
     \leavevmode{\leaders\hrule height.5ex depth\dimexpr-.5ex+0.4pt\hfill%
-    %\hskip 0.5em \hbox{\textsc{#1}} \hskip 0.5em %
     \hskip 0.5em \hbox{{#1}} \hskip 0.5em %
     \leaders\hrule height.5ex depth\dimexpr-.5ex+0.4pt\hfill}
   }%
-  %{\Large \hrulefill\hskip 0.5em{\textsc{#1}}\hskip 0.5em\hrulefill \\%
   \vskip 0.75em%
 }
 
