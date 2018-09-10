@@ -1,0 +1,187 @@
+\documentclass[letter,10pt]{scrartcl}
+\raggedright
+\usepackage[paperwidth=8.5in,paperheight=11.0in,margin=0.85in]{geometry}
+%\usepackage[urw-garamond]{mathdesign}
+%\usepackage[scaled]{helvet}
+\usepackage[default]{sourcesanspro}
+\usepackage[T1]{fontenc}
+\usepackage{enumitem}
+\setlist{nolistsep,noitemsep,leftmargin=1em,label=--}
+\begin{document}
+\pagestyle{empty}
+\raggedright
+%\setlength{\parindent}{2em}
+%\begin{tabularx}{\textwidth}{lXr}
+  %\multirow{4}{*}{\Huge \textsf{\textbf{Alexander C. Rucker}}} 
+  %%&&\texttt{acrucker@stanford.edu} \\ 
+  %&&\textsc{acrucker@stanford.edu} \\ 
+  %&& (732) 470-5808 \\ 
+  %&& 5 Comstock Cir., 401A \\ 
+  %&& Stanford, CA 94305-7710
+%\end{tabularx}
+\parbox{4in}{
+  \vfill
+  \Huge \textsf{\textbf{Alexander C. Rucker}}\\
+  \vfill
+}\hfill
+\parbox{1.75in}{
+  \centering
+  \textsc{acrucker@stanford.edu} \\
+(732) 470-5808 \\
+5 Comstock Circle, Apt 401A \\
+Stanford, CA 94305-7710
+} 
+
+\newcommand{\entry}[3]{%
+  \hfill%
+  \parbox{1.6in}{\raggedleft\vfill{\large \textbf{#1}}\\#2\vfill}%
+  \hskip 0.25in%
+  \parbox{4.9in}{\raggedright\vfill#3\vfill}%
+  \hfill%
+  \vskip 1.0em %
+}
+
+\newcommand{\lineitem}[3]{%
+  \parbox{1.2in}{#2}\hskip 0.10in%
+  \parbox{1.1in}{\raggedright\textbf{#1}}\hskip 0.10in%
+  \parbox{4.25in}{#3}\hfill\\[0.2em]%
+}
+
+%\newcommand{\listit}{\rule[0.65ex]{0.5em}{0.25ex}\hskip 0.5em}
+\newcommand{\listit}{\raisebox{0.1ex}{--}\hskip 0.5em}
+\newcommand{\header}[1]{%
+  \vskip 1.0em %
+  {\Large %
+    \leavevmode{\leaders\hrule height.5ex depth\dimexpr-.5ex+0.4pt\hfill%
+    %\hskip 0.5em \hbox{\textsc{#1}} \hskip 0.5em %
+    \hskip 0.5em \hbox{{#1}} \hskip 0.5em %
+    \leaders\hrule height.5ex depth\dimexpr-.5ex+0.4pt\hfill}
+  }%
+  %{\Large \hrulefill\hskip 0.5em{\textsc{#1}}\hskip 0.5em\hrulefill \\%
+  \vskip 0.75em%
+}
+
+\header{Education}
+\entry{Stanford University}{
+  Ph.D, Electrical Eng. \\
+  Sep 2017 -- Present
+}{
+  \begin{itemize}
+    \item Advised by {Kunle Olukotun} \hfill GPA: \textbf{4.07}
+    \item Stanford Graduate Fellowship (2017)
+    \item I'm currently studying techniques to design and program energy efficient, high-performance reconfigurable accelerators for data processing and ML.
+  \end{itemize}
+}
+\entry{Cornell University}{
+  BS, Electrical \& Comp. Eng. \\
+  Aug 2014 -- May 2017
+
+}{
+  \begin{itemize}
+    \item \emph{Summa cum Laude} \hfill GPA: \textbf{4.07}
+    \item Sibley Prize (Highest ECE GPA, 2017)
+    \item Pertsch Prize (Highest ECE GPA, 2016)
+  \end{itemize}
+}
+
+\header{Work Experience}
+\entry{Cavium}{
+  Architecture Intern\\
+  May 2017 -- Aug 2017
+}{
+  \begin{itemize}
+    \item Profiled the instruction-delivery characteristics of modern cloud applications
+    \item Designed and evaluated instruction prefetchers for ARM-based server processors\\
+    \item Used a mixture of trace driven and cycle-accurate simulation to evaluate designs
+  \end{itemize}
+}
+\entry{Nvidia}{
+  GPU Architecture Intern\\
+  May 2016 -- Aug 2016
+}{
+  \begin{itemize}
+    \item Analyzed performance simulator accuracy across multiple hardware
+        configurations 
+    \item Identified possible causes of simulator performance not matching hardware
+    \item Used Perl to automate functional verification tasks
+  \end{itemize}
+}
+
+\header{Research Experience}
+\entry{Prof. Olukotun}{
+  Stanford University \\
+  Jan 2018 -- Present
+}{
+  \begin{itemize}
+    \item Adapted booksim with a custom simulator to evaluate networks for CGRAs
+    \item Wrote a genetic-algorithm based placement tool for hybrid networks
+    \item Zhang, Y., \textbf{Rucker, A.}, \emph{et al.} ``Compiler-Directed Hybrid Networks for Spatial Architectures.'' \emph{ASPLOS, 2019.} (Submitted)
+  \end{itemize}
+}
+\entry{Prof. Dally}{
+  Stanford University \\
+  Sep 2017 -- Dec 2017
+}{
+  \begin{itemize}
+    \item Adapted boolean satisfiability algorithms to allow efficient hardware acceleration
+    \item Performed ASIC place-and-route to quantify accelerator hardware requirements
+    \item Zhu, C., \textbf{Rucker, A.}, Wang, Y., Dally, W.J. ``SATin: Hardware for Boolean Satisfiability Inference.'' \emph{HPCA, 2019.} (Submitted)
+  \end{itemize}
+}
+\entry{Prof. Suh}{
+  Cornell University \\
+  Jan 2015 -- May 2017
+}{
+  \begin{itemize}
+      \item Developed an online scheme to predict GPGPU kernel behavior and
+            enable dynamic voltage and frequency scaling while meeting soft real-time
+            deadlines
+          \item Chen, T., \textbf{Rucker, A.}, Suh, G.E. 
+          ``Execution Time Prediction for Energy-Efficient Hardware
+          Accelerators.'' \emph{MICRO, 2015.}
+  \end{itemize}
+}
+
+\header{Extracurricular Activities}
+\lineitem{Long Hill FAS}{Oct 2012 -- May 2017}{
+  \begin{itemize}
+      \item Oversaw patient care on a 2--4 person BLS ambulance crew
+      \item Received life saving award for CPR save (Jan 2016)
+  \end{itemize}
+}
+\lineitem{Cornell EMS}{Jan 2015 -- May 2017}{
+  \begin{itemize}
+    \item EMT/Crew Chief with a 24/7 student-run BLS first response service
+  \end{itemize}
+}
+\lineitem{HKN Treasurer}{May 2016 -- May 2017}{
+  \begin{itemize}
+      \item Helped organize tutoring for introductory classes and other events
+  \end{itemize}
+}
+\lineitem{ECE 2400 TA}{Spring 2017}{
+  \begin{itemize}
+      \item TA'ed first offering of C/systems programming class
+  \end{itemize}
+}
+\lineitem{DTD Risk Manager}{Jan 2016 -- Dec 2016}{
+  \begin{itemize}
+      \item Ensured guest safety during events and served as honor board chair
+  \end{itemize}
+}
+\lineitem{Eng. Peer Advisor}{Fall 2015, Fall 2016}{
+  \begin{itemize}
+      \item Co-led weekly freshman seminar and provided advice about engineering
+  \end{itemize}
+}
+\lineitem{ECE 3140 TA}{Spring 2016}{
+  \begin{itemize}
+      \item TA'ed embedded systems using new, ARM-based development boards
+  \end{itemize}
+}
+\lineitem{ECE 2300 TA}{Fall 2015}{
+  \begin{itemize}
+      \item Redesigned digital logic labs to allow students to take them home
+  \end{itemize}
+}
+\end{document}
