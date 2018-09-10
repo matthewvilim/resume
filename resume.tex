@@ -4,7 +4,7 @@
 \usepackage[default]{sourcesanspro}
 \usepackage[T1]{fontenc}
 \usepackage{enumitem}
-\setlist{nolistsep,noitemsep,leftmargin=1em,label=--}
+\setlist{nolistsep,noitemsep,leftmargin=1em}
 \begin{document}
 \pagestyle{empty}
 \raggedright
@@ -24,9 +24,9 @@ Redwood City, CA 94063 \\
 
 \newcommand{\entry}[3]{%
   \hfill%
-  \parbox{1.6in}{\raggedleft\vfill{\large \textbf{#1}}\\#2\vfill}%
+  \parbox[t]{1.6in}{\raggedleft\vfill{\large \textbf{#1}}\\#2\vfill}%
   \hskip 0.25in%
-  \parbox{4.9in}{\raggedright\vfill#3\vfill}%
+  \parbox[t]{4.9in}{\raggedright\vfill#3\vfill}%
   \hfill%
   \vskip 1.0em %
 }
