@@ -1,45 +1,44 @@
-\documentclass[letter,10pt]{scrartcl}
-\raggedright
+\documentclass[letter,10pt]{memoir}
 \usepackage[paperwidth=8.5in,paperheight=11.0in,margin=0.85in]{geometry}
-\usepackage[default]{sourcesanspro}
-\usepackage[T1]{fontenc}
+
+\usepackage{fontspec}
+
+\setmainfont[BoldFont={Source Sans Pro Bold}, RawFeature={+kern, +ss01, +onum},
+             SmallCapsFont={Source Sans Pro}, SmallCapsFeatures={Letters=SmallCaps}]{Source Sans Pro}
+\setmonofont{Source Code Pro}
+\newfontfamily{\halfbf}{Source Sans Pro Semibold}
+\DeclareTextFontCommand{\texthalfbf}{\halfbf}
+
+\addfontfeature{Alternate=ss04}
 \usepackage{enumitem}
 \setlist{nolistsep,noitemsep,leftmargin=1em,label=--}
+
 \begin{document}
 \pagestyle{empty}
 \raggedright
-\parbox{4in}{
-  {\Huge\textsf{\textbf{Matthew Vilim}}}\\
-}
-\vskip 0.1em %
-\parbox[t]{1.50in}{
-  \textsc{mvilim@stanford.edu} \\
-  \textsc{github.com/matthewvilim} \\
-  \textsc{(331) 643-9982} \\
-} 
+
 \hfill
-\parbox[t]{1.50in}{
-  488 Winslow St.\\
-  Apt. 416\\
-  Redwood City, CA 94063\\
-} 
+  \parbox{4in}{\vfill\raggedleft\fontsize{32pt}{32pt} {\texthalfbf{Matthew Vilim}}\vfill\vskip0pt}
+\hskip.15in\vrule width0.4pt\hskip.15in
+\parbox{1.75in}{
+  \texttt{mvilim@stanford.edu} \\
+  \texttt{github.com/matthewvilim} \\
+  (331) 643-9982 \\
+  488 Winslow St, Apt 416 \\
+  Redwood City, CA 94063
+} \hfill\hskip0pt
+
+\vskip.2in
 
 \newcommand{\entry}[3]{%
   \hfill%
-  \parbox[t]{1.6in}{\raggedleft\vfill{\large \textbf{#1}}\\#2\vfill}%
+  \parbox[t]{1.6in}{\raggedleft\vfill{\large \texthalfbf{#1}}\\#2\vfill}%
   \hskip 0.25in%
   \parbox[t]{4.9in}{\raggedright\vfill#3\vfill}%
   \hfill%
   \vskip 1.0em %
 }
 
-\newcommand{\lineitem}[3]{%
-  \parbox{1.2in}{#2}\hskip 0.10in%
-  \parbox{1.1in}{\raggedright\textbf{#1}}\hskip 0.10in%
-  \parbox{4.25in}{#3}\hfill\\[0.2em]%
-}
-
-\newcommand{\listit}{\raisebox{0.1ex}{--}\hskip 0.5em}
 \newcommand{\header}[1]{%
   \vskip 1.0em %
   {\Large %
@@ -55,7 +54,7 @@
   PhD, Electrical Eng. \\
   Fall 2016 -- Present
 }{
-  \hfill GPA \textbf{4.07}\\
+  \hfill GPA \texthalfbf{4.07}\\
   \begin{itemize}
     \item Languages, compilers, and architectures for FPGAs and reconfigurable accelerators
     \item Advised by {Kunle Olukotun}
@@ -65,14 +64,14 @@
   MS, Electrical Eng. \\
   Fall 2016 -- Spring 2018
 }{
-  \hfill GPA \textbf{3.95}
+  \hfill GPA \texthalfbf{3.95}
 }
 \entry{UIUC}{
   BS, Computer Eng. \\
   Fall 2012 -- Winter 2015
 
 }{
-  \hfill GPA \textbf{3.95}\\
+  \hfill GPA \texthalfbf{3.95}\\
   \begin{itemize}
     \item University Honors (top 3\% of College of Engineering)
     \item Highest Honors
@@ -81,7 +80,7 @@
 
 \header{Work}
 \entry{NVIDIA}{
-  \emph{GPU Verification Intern}\\
+  GPU Verification Intern\\
   Spring and Summer 2016\\
   Santa Clara, CA
 }{
@@ -91,24 +90,24 @@
   \end{itemize}
 }
 \entry{NVIDIA}{
-  \emph{Systems Software Intern}\\
+  Systems Software Intern\\
   Summers 2014, 2015\\
   Santa Clara, CA
 }{
   \begin{itemize}
-    \item Developer on Mac OS X graphics drivers team
-    \item Ported features only implemented in Windows drivers to OS X drivers
+    \item Developer on macOS graphics drivers team
+    \item Ported features only implemented in Windows drivers to macOS drivers
   \end{itemize}
 }
 \entry{Argonne (ANL)}{
-  \emph{Research Intern}\\
+  Research Intern\\
   Summers 2012, 2013\\
   Lemont, IL
 }{
   Developer on GREET (greet.es.anl.gov), a model of U.S. emissions
 }
 \entry{Entrepreneur}{
-  \emph{Computer service business}\\
+  Computer service business\\
   2008, 2012
 }{
   \begin{itemize}
@@ -123,7 +122,7 @@
   Winter 2017 -- Present
 }{
   \begin{itemize}
-    \item Y. Zhang, A. Rucker, \textbf{M. Vilim}, \emph{et al.} ``Compiler-Directed Hybrid Networks for Spatial Architectures.'' \emph{ASPLOS, 2019.} (Submitted)
+    \item Y. Zhang, A. Rucker, \texthalfbf{M. Vilim}, \emph{et al.} ``Compiler-Directed Hybrid Networks for Spatial Architectures.'' \emph{ASPLOS, 2019.} (Submitted)
   \end{itemize}
 }
 \entry{Prof. Rakesh Kumar}{
@@ -132,7 +131,7 @@
 }{
   \begin{itemize}
     \item Developed technique to increase Bitcoin mining profits
-    \item \textbf{M. Vilim}, H. Duwe, R. Kumar, ``Approximate Bitcoin Mining.'' \emph{DAC, 2016.}
+    \item \texthalfbf{M. Vilim}, H. Duwe, R. Kumar, ``Approximate Bitcoin Mining.'' \emph{DAC, 2016.}
   \end{itemize}
 }
 
