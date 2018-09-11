@@ -3,11 +3,8 @@
 
 \usepackage{fontspec}
 
-\setmainfont[BoldFont={Source Sans Pro Bold}, RawFeature={+kern, +ss01, +onum},
-             SmallCapsFont={Source Sans Pro}, SmallCapsFeatures={Letters=SmallCaps}]{Source Sans Pro}
+\setmainfont[BoldFont={Source Sans Pro Semibold}]{Source Sans Pro}
 \setmonofont{Source Code Pro}
-\newfontfamily{\halfbf}{Source Sans Pro Semibold}
-\DeclareTextFontCommand{\texthalfbf}{\halfbf}
 
 \addfontfeature{Alternate=ss04}
 \usepackage{enumitem}
@@ -18,7 +15,7 @@
 \raggedright
 
 \hfill
-  \parbox{4in}{\vfill\raggedleft\fontsize{32pt}{32pt} {\texthalfbf{Matthew Vilim}}\vfill\vskip0pt}
+  \parbox{4in}{\vfill\raggedleft\fontsize{32pt}{32pt} {\textbf{Matthew Vilim}}\vfill\vskip0pt}
 \hskip.15in\vrule width0.4pt\hskip.15in
 \parbox{1.75in}{
   \texttt{mvilim@stanford.edu} \\
@@ -32,7 +29,7 @@
 
 \newcommand{\entry}[3]{%
   \hfill%
-  \parbox[t]{1.6in}{\raggedleft\vfill{\large \texthalfbf{#1}}\\#2\vfill}%
+  \parbox[t]{1.6in}{\raggedleft\vfill{\large \textbf{#1}}\\#2\vfill}%
   \hskip 0.25in%
   \parbox[t]{4.9in}{\raggedright\vfill#3\vfill}%
   \hfill%
@@ -54,7 +51,7 @@
   PhD, Electrical Eng. \\
   Fall 2016 -- Present
 }{
-  \hfill GPA \texthalfbf{4.07}\\
+  \hfill GPA \textbf{4.07}\\
   \begin{itemize}
     \item Languages, compilers, and architectures for FPGAs and reconfigurable accelerators
     \item Advised by {Kunle Olukotun}
@@ -64,14 +61,14 @@
   MS, Electrical Eng. \\
   Fall 2016 -- Spring 2018
 }{
-  \hfill GPA \texthalfbf{3.95}
+  \hfill GPA \textbf{3.95}
 }
 \entry{UIUC}{
   BS, Computer Eng. \\
   Fall 2012 -- Winter 2015
 
 }{
-  \hfill GPA \texthalfbf{3.95}\\
+  \hfill GPA \textbf{3.95}\\
   \begin{itemize}
     \item University Honors (top 3\% of College of Engineering)
     \item Highest Honors
@@ -122,7 +119,7 @@
   Winter 2017 -- Present
 }{
   \begin{itemize}
-    \item Y. Zhang, A. Rucker, \texthalfbf{M. Vilim}, \emph{et al.} ``Compiler-Directed Hybrid Networks for Spatial Architectures.'' \emph{ASPLOS, 2019.} (Submitted)
+    \item Y. Zhang, A. Rucker, \textbf{M. Vilim}, \emph{et al.} ``Compiler-Directed Hybrid Networks for Spatial Architectures.'' \emph{ASPLOS, 2019.} (Submitted)
   \end{itemize}
 }
 \entry{Prof. Rakesh Kumar}{
@@ -131,7 +128,7 @@
 }{
   \begin{itemize}
     \item Developed technique to increase Bitcoin mining profits
-    \item \texthalfbf{M. Vilim}, H. Duwe, R. Kumar, ``Approximate Bitcoin Mining.'' \emph{DAC, 2016.}
+    \item \textbf{M. Vilim}, H. Duwe, R. Kumar, ``Approximate Bitcoin Mining.'' \emph{DAC, 2016.}
   \end{itemize}
 }
 
