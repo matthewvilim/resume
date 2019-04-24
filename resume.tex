@@ -35,18 +35,18 @@
 
 \newcommand{\entry}[3]{%
   \hfill%
-  \parbox{1.6in}{\raggedleft\vfill{\large \textbf{#1}}\\#2\vfill}%
+  \parbox[t]{1.6in}{\raggedleft\vfill{\large \textbf{#1}}\\#2\vfill}%
   \hskip 0.25in%
-  \parbox{5.6in}{\raggedright\vfill#3\vfill}%
+  \parbox[t]{5.6in}{\raggedright\vfill#3\vfill}%
   \hfill%
   \vskip 1.0em %
 }
 
 \newcommand{\lineitem}[2]{%
   \hfill%
-  \parbox{1.6in}{\raggedleft\vfill{\large \textbf{#1}}\vfill}%
+  \parbox[t]{1.6in}{\raggedleft\vfill{\large \textbf{#1}}\vfill}%
   \hskip 0.25in%
-  \parbox{5.6in}{\raggedright\vfill#2\vfill}%
+  \parbox[t]{5.6in}{\raggedright\vfill#2\vfill}%
   \hfill%
   \vskip 1.0em %
 }
@@ -54,7 +54,7 @@
 %\newcommand{\listit}{\rule[0.65ex]{0.5em}{0.25ex}\hskip 0.5em}
 \newcommand{\listit}{\raisebox{0.1ex}{--}\hskip 0.5em}
 \newcommand{\header}[1]{%
-  \vskip 1.0em %
+  %\vskip 1.0em %
   {\Large %
     \leavevmode{\leaders\hrule height.5ex depth\dimexpr-.5ex+0.4pt\hfill%
     %\hskip 0.5em \hbox{\textsc{#1}} \hskip 0.5em %
